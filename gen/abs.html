@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<title>A Continuous Model for Salient Shape Selection and Representation</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#6600CC" alink=
+"#6600CC" vlink="#9933FF">
+<h2>A Continuous Model for <br>
+Salient Shape Selection and Representation</h2>
+
+
+<h3><a href="http://www.cs.nyu.edu/hsingkuo">Hsing-Kuo Kenneth Pao</a></h3>
+
+<a href="http://www.cs.nyu.edu/">Department of Computer
+Science</a><br>
+<a href="http://www.cims.nyu.edu/">Courant Institute of
+Mathematical Sciences</a><br>
+<a href="http://www.nyu.edu/">New York University</a> <br>
+<br>
+ 
+
+<h3>Abstract</h3>
+
+<p>
+We propose a new framework for shape representation
+and scenery shape selection.
+Various topics including figure/ground separation, shape axis construction,
+junction detection and illusory figure finding will be discussed.
+</p>
+
+<p>
+The model construction is inspired by the Gestalt studies.
+They suggest proximity, convexity,
+symmetry, etc, as cues for
+figure/ground separation and visual organization.
+By our distributed systems,
+we quantify those attributes for complete/partial shapes and
+use them for shape evaluations and representations.
+In particular, the shape convexity
+instead of other well-studied shape
+attributes such as the symmetry axis or size,
+will be emphasized.
+</p>
+
+<p>
+Two models are proposed.
+The decay diffusion process
+is applied in predicting
+figure/ground phenomenon, based on a convexity measure
+for figure/ground sharing the same area.
+The orientation diffusion process,
+adopting orientation information on shape boundaries/edges,
+will discuss the figure/ground separation or shape convexity comparison
+for regions not owning the same size.
+A Kullback-Leibler convexity measure
+is proposed, with a flexible scenario.
+Through a parameter,
+we are allowed to choose between a size-invariant convexity
+measure or one with small-size preference.
+For convexity comparison of perfectly convex shapes,
+a preference of circles over triangles
+will be given, as well as
+the preference of squares over rectangles.
+These two models are also used in generating the symmetry information.
+In particular, the symmetry information
+suggested by the orientation process is computed
+by only local operations.
+The junction information will be derived similarly,
+where junctions are considered no more than ``boundary axis points''.
+</p>
+
+<p>
+Our framework, based on variational formulations will produce
+the static-state results.
+The simulation is continuous, rely on
+no artificial binary thresholds.
+For convexity measurement,
+other than the mathematical 0-1 definition,
+we distinguish between ``more'' or ``less'' convex shapes.
+For axis construction,
+we provide the information which continuously describes
+strength of the axes for natural axis pruning.
+For junction detection, the transition
+from low-curvature or high-curvature curves to
+curves with a discontinuous curvature
+will be seen.
+</p>
+
+<p>
+The decay diffusion process,
+with help of the convexity/entropy measure will also be applied
+in shape selection.
+Hence, our framework integrally combining many different functions
+is useful as a universal low- to middle-level
+vision simulation.
+</p>
+
+<hr>
+
+<br>
+</body>
+</html>
+
