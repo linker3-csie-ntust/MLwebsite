@@ -1,0 +1,167 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>Algorithm</title>
+<style>
+<!--
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+-->
+</style>
+</head>
+
+<body>
+
+<hr>
+<p align="center"><b><font face="Times New Roman" size="6">Algorithm</font></b></p>
+<p align="center"><b><font face="Times New Roman" size="5">CS3001302</font></b></p>
+<p align="center"><b><font face="Times New Roman" size="4">Hsing-Kuo Pao
+<a href="mailto:pao@mail.ntust.edu.tw">鮑興國</a></font></b></p>
+<p align="center"><b><font face="Times New Roman" size="4">National Taiwan 
+University of Science and Technology</font></b></p>
+<p align="center"><b><font face="Times New Roman" size="5">Fall&nbsp; 2004</font></b></p>
+<p align="center"><b><font face="Times New Roman" size="5" color="#FF0000">
+期末考教室改為 IB-501 及 IB-502</font></b></p>
+<hr>
+<p align="left"><font face="Times New Roman"><b> <font size="4">Class lectures:</font></b><font size="4"> 
+Monday 15:30~17:20 &nbsp;&amp;&nbsp; Thursday 15:30~16:20 (IB 702)</font></font></p>
+<p align="left"><font face="Times New Roman" size="4"><b>Instructor:</b> 
+Hsing-Kuo Pao <a href="mailto:pao@mail.ntust.edu.tw">鮑興國</a> , 綜合研究大樓 RB-503-1 , 
+2730-1065</font></p>
+<p align="left"><font face="Times New Roman" size="4"><b>Teaching Assistants:</b>
+</font></p>
+<ul>
+  <li>
+  <p align="left"><font size="4" face="Times New Roman"><a href="mailto:M9315018@mail.ntust.edu.tw">陳慶豪 
+  <b>(M9315018)</b></a></font></li>
+  <li>
+  <p align="left"><font size="4" face="Times New Roman"><a href="mailto:M9315062@mail.ntust.edu.tw">李育翔 
+  <b>(M9315062)</b></a></font></li>
+</ul>
+<p align="left"><b><font size="4" face="Times New Roman">Text Book:</font></b></p>
+<ul>
+  <li>
+<p align="left"><font face="Times New Roman" size="4">Introduction to 
+Algorithms, 2/e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thomas H. Cormen, 
+Charles E. Leiserson, 2001</font></p>
+  </li>
+</ul>
+<p align="left"><b><font size="4" face="Times New Roman">Prerequisite:</font></b></p>
+<ul>
+  <li>
+<p align="left"><font face="Times New Roman" size="4">Any high-level languages 
+(C/C++, Java, etc), data structure</font></p>
+  </li>
+</ul>
+<p align="left"><font face="Times New Roman" size="4"> <b>Grading:</b></font></p>
+<ul>
+  <li>
+<p align="left"><b><font face="Times New Roman" size="4">30 %&nbsp; homework</font></b></p>
+  </li>
+  <li>
+<p align="left"><b><font face="Times New Roman" size="4">30 %&nbsp; midterm (Dec. 2)</font></b></p>
+  </li>
+  <li>
+<p align="left"><b><font face="Times New Roman" size="4">40 %&nbsp; final
+<font color="#FF0000">(Dec. 6)</font></font></b></p>
+  </li>
+</ul>
+<p align="left">　</p>
+<hr>
+<p align="left"><strong><u>
+<font face="Times New Roman" size="5" color="#008000">Homework</font></u></strong></p>
+<p align="left"><font face="Times New Roman">(No copying, any reference should 
+be clearly cited!)</font></p>
+<p align="left"><font face="Times New Roman">1. Please write a short code to do
+<u>bottom-up</u> merge sort.</font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; The bottom-up 
+style means no recursive calls should be used in your program.</font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; Of course, your 
+program should be like a merge sort, instead of an insertion sort or anything 
+else.</font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; The input can be 
+any size, like 59 or 38 which is not equal to 2<i><sup>k</sup>, k</i></font><span lang="en"><font face="Symbol">&sup3;</font></span><font face="Times New Roman">1.</font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; You can test 
+your program by several not too large inputs.</font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; To submit the 
+homework, please print out your program, with at least 3 input sequences.</font></p>
+<p align="left">　</p>
+<p align="left"><font face="Times New Roman">2. Please give asymptotically tight 
+solution to the following recurrence equations.</font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; (i)&nbsp;&nbsp;&nbsp;
+<i>&nbsp;T</i>(<i>n</i>) = <i>T</i>(9<i>n</i>/10) + <i>n</i></font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; (ii)&nbsp;&nbsp;&nbsp;
+<i>T</i>(<i>n</i>) = 7<i>T</i>(<i>n</i>/2) + <i>n</i><sup>2</sup></font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; (iii)&nbsp;&nbsp;
+<i>T</i>(<i>n</i>) = 2<i>T</i>(<i>n</i>/4) + <i>n</i><sup>0.5</sup></font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; (iv)&nbsp;&nbsp;&nbsp;<i>T</i>(<i>n</i>) = 4<i>T</i>(<i>n</i>/2)&nbsp;+ <i>n</i><sup>2.5</sup></font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; (v)&nbsp;&nbsp;&nbsp;
+<i>T</i>(<i>n</i>) = <i>T</i>(<i>n -</i>1)&nbsp;+ lg<i>n</i></font></p>
+<p align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp; (vi)&nbsp;&nbsp;&nbsp;<i>T</i>(<i>n</i>) = <i>T</i>(<i>n -</i>2)&nbsp;+ 2lg<i>n</i></font></p>
+<hr>
+<p align="left"><u>
+<strong><font face="Times New Roman" color="#008000" size="5">Slides in the 
+Class</font></strong></u></p>
+<p align="left"><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1.&nbsp;<a href="algo/2004_fall/lec_01_The_Role_of_the_Algorithms_in_Computer.ppt">The 
+Role of the Algorithms in Computer</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+2.&nbsp;<a href="algo/2004_fall/lec_02_Getting_Started.ppt">Getting 
+Started</a></font></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="4" face="Times New Roman">
+3.&nbsp;<a href="algo/2004_fall/lec_03_Growth_of_Functions.ppt">Growth of Functions</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+4.&nbsp; Recurrences</font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+5.&nbsp;<a href="algo/2004_fall/lec_05_Elementary_Sorting.ppt">Elementary Sorting</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+6.&nbsp;<a href="algo/2004_fall/lec_06_Heapsort.ppt">Heap 
+sort</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+7.&nbsp;<a href="algo/2004_fall/lec_07_Quicksort.ppt">Quick 
+sort</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+8.&nbsp;<a href="algo/2004_fall/lec_08_Sorting_in_Linear_Time.ppt">Sorting in Linear Time</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+9.&nbsp;<a href="algo/2004_fall/lec_11_Hash_Table.ppt">Hash 
+Table</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+10.&nbsp;<a href="algo/2004_fall/lec_15_Dynamic_Programming.ppt">
+Dynamic Programming</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+11.&nbsp; </font><font face="Times New Roman" size="4"><a href="algo/2004_fall/lec_21_Disjoint_Sets.ppt">
+Disjoint Sets</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+12.&nbsp; </font><font face="Times New Roman" size="4">
+<a href="algo/2004_fall/lec_22_Elementary_Graph_Algorithms.ppt">
+Elementary Graph Algorithms</a></font></p>
+<p><font face="Times New Roman" size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+13.&nbsp; </font><font face="Times New Roman" size="4">
+<a href="algo/2004_fall/lec_23_Minimum_Spanning_Tree.ppt">
+Minimum Spanning Tree</a></font></p>
+<p>　</p>
+<hr>
+<p><strong><u><font face="Times New Roman" size="5">Midterm</font></u></strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="4">Dec. 2 (Thursday)</font></p>
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+期中考教室改為 <b>IB-501</b> 及 <b>IB-502</b></font></p>
+<p>　</p>
+<p><strong><u><font face="Times New Roman" size="5" color="#FF0000">Final</font></u></strong></p>
+<p><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="4">Jan. 6 (Thursday)</font></font></p>
+<p><font size="4" color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+期末考教室改為 <b>IB-501</b> 及 <b>IB-502</b></font></p>
+<p>　</p>
+<p align="left">　</p>
+
+</body>
+
+</html>
