@@ -1,0 +1,24 @@
+<TITLE>Homework 2</title>
+<HEAD><H2>Homework II</H2>
+<H2>Cube Moving in Three Dimension</H3></HEAD><br>
+<BODY BGCOLOR="#FFFFFF">
+<H2>1.0</H2><H3>In this assignment, we do 3D-to-2D transformations to view a 3D object through our screen.<br><br><br>
+1.1 Source codes description :</H3>
+<H4>>1.1.1 PrjtingObj.java ----- classes of 3D objects(points, planes...) and all projection functions.</H4>
+(1) Function 'ProjectToPlane', Projects a 3D point to a point on view plane.<br>
+(2) Function 'VPlaneToScreen', Transform set of 3D points on a plane to set of 2D points.<br>
+(3) Function 'ScreenTrans', Transform set of points on 2D to a window with given size.<br><br>
+<H4>>1.1.2 Matrix3D.java ----- all transformation functions: Translate, Rotate, Scale and some necessary operations for matrix.<br><br>
+>1.1.3 ThreeD.java ----- I/O processing and events handler.</H4><br>
+<H3>1.2 Idea :</H3>
+<H4>>1.2.1 First, we assume there is a view plane L and a view point V. For each object in 3 dimension, we just transform each (significant) point P of this object to view plane L by computing the intersection of line VP and plane L. The equation is:</H4>
+P'(after projecting) = V + t x (P-V) &&<br>
+P' belongs to L<br>
+<H4>Now each three dimension point can be transformed to 2 dimension point if the origin and identity of this plane has been assigned. To describe in detail:</H4>
+new point Q.x = (reference vector V) dotproduct (identity vector)<br>
+new point Q.y = (+/-) norm_of { (reference vector V) crossproduct (identity vector) } (*)<br><br>
+(*) we need to decide the sign by checking direction of the norm vector<br>
+<H4>The last step and the easiest step is we need to do a approapriate transformation to let all points located in a good place in the display window.<br><br>
+>1.2.2 The transformations for matrix are based on the Graphics's Textbook by Foley, van Dam, Feiner and Hughes.<br><br>
+>1.2.3 I/O is based on the code of 'ThreeD.java'.<br><br><br><br>
+<H2>2.0</H2><H3>Welcome to <a href="t2/example1.html">Program Demo</a>, you can use either mouse or keyboard to move the object.</H4></BODY>

@@ -1,0 +1,13 @@
+<TITLE>Homework 3</title>
+<HEAD><H2>Homework III</H2>
+<H2>Curve Interpolation Implementation</H3></HEAD><br>
+<BODY BGCOLOR="#FFFFFF">
+<H3>1.0 Abstract</H3>
+We use a interactive interface to create Hermite curves and Bezier curves(*) for interpolating set of points.<br>
+<H3>2.0 Idea of the codes</H3>
+For set of points, we create a curve for each pair of contiguous points. At the beginning, we assign a default tangent vector for each of them. It will be (1, 1) for the first and the last point, and P(n+1)-P(n-1) on the Point P(n). Later, you can adjust them by dragging the associated arrows in Hermite case or associated control points in Bezier case.<br><br>
+Part of the interface is based on code 'DrawTest.java', the fomulae to compute Hermite and Bezier curve is based on the Graphics textbook by Foley.<br><br>
+<H3>3.0 Welcome to <a href="t/example1.html">Program Demo</a>, you can click the mouse
+ button to append a point and drag to adjust the curves.</H3>
+(*) see 'Computer Graphics, Principles and Practice' by Foley, van Dam, Feiner a
+nd Hughes, 2nd Edition, Addison Wesley, 1990</BODY>

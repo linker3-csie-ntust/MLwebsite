@@ -1,0 +1,22 @@
+<TITLE>Homework 6</title>
+<HEAD><H2>Homework VI</H2>
+<H2>Figure Animation</H2></HEAD><br>
+<BODY BGCOLOR="#FFFFFF">
+<H3>1.0 Abstract</H3>
+Base on previous works, we try to create a human-like figure, and do some animations on it.<br>
+<H3>2.0 Idea of the codes</H3>
+<H4>Hierarchy Data Structure</H4>
+For a figure, we use hierarchy tree to represent it. Every movement on the component of the body will be a local one. Then we travel the hierarchy tree from the root to get the global movement. A stack of matrices is needed for remembering some temporary information.
+<H4>User Interface</H4>
+We can create our own animation or see the demo things. There are four steps to create a animation:<br>
+(1) Create isolated actions, (after you do that, you need to press the 'Freeze' button to keep it) (*)(**)<br>
+(2) Check the preview to make sure that it's what you want,<br>
+(3) Rendering (you can choose a appropriate frame number by entering a integer number in the text entry) and<br>
+(4) See the final performance. (***)<br><br>
+(*) In our interface, there are four kinds transformations can be operated on each component of the figure: 'Rotate by x', 'Rotate by y', 'Rotate by z' and  'Translate'. The Axles are the regular ones we familar. (the Z axle towards to the ceiling, Y axle towards to the right)<br>
+(**) You can go back to some specific frame and edit it.<br>
+(***) You can save this animation as you want it.<br><br>
+The first step will be a little bit tricky because that you need to remember where the local axles are at every time. On the other hand, to render a play will be slow, to load a play will be slow, either.<br>
+<H3>3.0 Welcome to <a href="example1.html">Program Demo</a></H3>
+(*) see 'Computer Graphics, Principles and Practice' by Foley, van Dam, Feiner a
+nd Hughes, 2nd Edition, Addison Wesley, 1990</BODY>

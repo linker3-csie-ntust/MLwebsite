@@ -1,0 +1,12 @@
+<TITLE>Homework 4</title>
+<HEAD><H2>Homework IV</H2>
+<H2>Solid Modeling</H2></HEAD><br>
+<BODY BGCOLOR="#FFFFFF">
+<H3>1.0 Abstract</H3>
+We use a interactive interface to create 'cross-section' curves and 'profile' curves, then use them as inputs to construct sorts of model.<br>
+<H3>2.0 Idea of the codes</H3>
+For a cross-section or profile path, we use a function 'next' to get the next tiny segment no matter it's built by function lineTo or BezierTo. (this process is what we call parsing)<br><br>
+After parsing, each curve has become a stream of line segments (or maybe you can say it's a stream of points). We use double loops to draw lines for pair of contiguous points.(*)
+<H3>3.0 Welcome to <a href="example1.html">Program Demo</a>, you can click the mouse
+ button to append a point and drag to adjust the curves.</H3>
+(*) Solid line-drawing algorithm used here is little different from what professor said in his email, we don't use two double loops to draw line for pair of contiguous points, we just use one double loop to draw line for pair of contiguous points and line between point p(n) readed right now and a prior point p(n-c), where c is the number of points in cross-section curves.</BODY>

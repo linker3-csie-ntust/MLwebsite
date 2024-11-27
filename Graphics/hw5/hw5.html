@@ -1,0 +1,19 @@
+<TITLE>Homework 5</title>
+<HEAD><H2>Homework V</H2>
+<H2>Perspective Viewing Implementation</H3></HEAD><br>
+<BODY BGCOLOR="#FFFFFF">
+<H3>1.0 Abstract</H3>
+We use a 3D basis-to-basis transformation and a 3D-to-2D projection(*) to implement the perspective viewing.<br>
+<H3>2.0 Idea of the codes</H3>
+<H4>perspective viewing</H4>
+There are three steps when we do the perspective viewing: First, we do the basis-to-basis transformation to transform object in global basis to in local basis (basis in view point). Secondly, we project those points from 3D to 2D by equations<br><br>
+X = - focus length * x / z  (!)(!!)<br>
+Y = - focus length * y / z<br><br>
+(!) capital letter means the coordinate is on 2D, lower letter means it's in 3D<br>
+(!!) minor sign is needed for right hand axles system<br><br>
+Finally, we do the simple linear transformation in 2D, from Euclid plane to window screen.
+<H4>User Interface</H4>
+We can change the view point by mouse dragging, the point is that how you can explain where the view point should go by a 2D mouse dragging. We use two points (one for two free moving degrees) to implement it. One is the view point, another is the shadow of view point on z = 0 plane. When you drag the view point, we don't change the local z coordinate of view point, that means view point only can travel on the local z = 0 plane. To change the local z coordinate of view point, you can drag the shadow of it on global z = 0 plane. If the local z = 0 plane and the (global) z = 0 plane are not parallel, these things always can be done (four free degrees to change the coordinate of view point).
+<H3>3.0 Welcome to <a href="example1.html">Program Demo</a></H3>
+(*) see Chapter 6 in 'Computer Graphics, Principles and Practice' by Foley, van Dam, Feiner a
+nd Hughes, 2nd Edition, Addison Wesley, 1990</BODY>
